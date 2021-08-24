@@ -20,12 +20,12 @@ class PermissionActivity : AppCompatActivity() {
 //            requestPermission()
 //        }
     }
-    private fun requestPermission() {
-        ActivityCompat.requestPermissions(
-            this@PermissionActivity,
-            permissions, 234
-        )
-    }
+//    private fun requestPermission() {
+//        ActivityCompat.requestPermissions(
+//            this@PermissionActivity,
+//            permissions, 234
+//        )
+//    }
 //    private fun hasPermission(): Boolean {
 //        var hasPermission = true
 //        for (permission in permissions) {
