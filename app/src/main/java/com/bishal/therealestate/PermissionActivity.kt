@@ -15,28 +15,28 @@ class PermissionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_permission)
 
         // Check for permission
-//        if
-//                (!hasPermission()) {
-//            requestPermission()
-//        }
+        if
+                (!hasPermission()) {
+            requestPermission()
+        }
     }
-//    private fun requestPermission() {
-//        ActivityCompat.requestPermissions(
-//            this@PermissionActivity,
-//            permissions, 234
-//        )
-//    }
-//    private fun hasPermission(): Boolean {
-//        var hasPermission = true
-//        for (permission in permissions) {
-//            if (ActivityCompat.checkSelfPermission(
-//                    this,
-//                    permission
-//                ) != PackageManager.PERMISSION_GRANTED
-//            ) {
-//                hasPermission = false
-//            }
-//        }
-//        return hasPermission
-//    }
+    private fun requestPermission() {
+        ActivityCompat.requestPermissions(
+            this@PermissionActivity,
+            permissions, 234
+        )
+    }
+    private fun hasPermission(): Boolean {
+        var hasPermission = true
+        for (permission in permissions) {
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    permission
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                hasPermission = false
+            }
+        }
+        return hasPermission
+    }
 }
