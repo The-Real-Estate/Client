@@ -1,0 +1,6 @@
+include ':RealEstateWearOS'
+include ':artistchaiyowear3'
+include ':artistchaiyowear2'
+include ':artistchaiyowear'
+include ':app'
+rootProject.name = "ArtistChaiyoo"

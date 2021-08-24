@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.bishal.therealestate.Fragments.HomeFragments"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_fragments" />
+
+    <fragment
+        android:id="@+id/navigation_fav"
+        android:name="com.bishal.therealestate.Fragments.FavoritesFragments"
+        android:label="Add Artist"
+        tools:layout="@layout/fragment_favorites_fragments" />
+
+
+    <fragment
+        android:id="@+id/navigation_aboutus"
+        android:name="com.bishal.therealestate.Fragments.AboutUsFragments"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us_fragments" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.bishal.therealestate.Fragments.SettingsFragments"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings_fragments" />
+    <fragment
+        android:id="@+id/navigation_noti"
+        android:name="com.bishal.therealestate.Fragments.Notification"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

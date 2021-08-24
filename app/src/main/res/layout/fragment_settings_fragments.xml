@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_gravity="center"
+    tools:context=".Fragments.SettingsFragments">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Profile" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/design_default_color_error"
+            android:backgroundTint="@color/design_default_color_error"
+            android:gravity="center"
+            android:text="Logout"
+            app:icon="@drawable/ic_baseline_logout_24" />
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bishal Budha"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ktm"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9863346414"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:text="bishal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:text="bishal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Edit Profile"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+</ScrollView>

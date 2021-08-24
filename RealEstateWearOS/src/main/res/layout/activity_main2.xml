@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/linearlayout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#F3F4F4"
+        android:backgroundTint="#2555E4"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="TheRealEstateWear"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:hint=" Username "
+        android:textColor="#F8F8F8"
+        android:textColorHighlight="@color/black"
+
+        android:textColorHint="#FFFFFF"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="67dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:hint=" Password "
+        android:inputType="textPassword"
+        android:textColor="#F4F2F2"
+        android:textColorHighlight="@color/black"
+
+        android:textColorHint="#F6F5F5"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Log In"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

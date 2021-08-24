@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuHome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_house_24"
+        />
+    <item
+        android:id="@+id/menuFav"
+        android:title="Favorites"
+        android:icon="@android:drawable/btn_star_big_on"
+        />
+
+    <item
+        android:id="@+id/menuProfile"
+        android:title="Aboutus"
+        android:icon="@android:drawable/ic_dialog_map"
+        />
+    <item
+        android:id="@+id/menuSettings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+         />
+    <item
+        android:id="@+id/menuNoti"
+        android:title="Notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+
+</menu>
