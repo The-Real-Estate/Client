@@ -34,30 +34,30 @@ class DashboardActivity : AppCompatActivity() {
 //        )
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        if (!hasPermission()) {
+            requestPermission()
+        }
 //
-//        if (!hasPermission()) {
-//            requestPermission()
-//        }
-//
-//    }
-//    private fun requestPermission() {
-//        ActivityCompat.requestPermissions(
-//            this@DashboardActivity,
-//            permissions, 1234
-//        )
-//    }
-//    private fun hasPermission(): Boolean {
-//        var hasPermission = true
-//        for (permission in permissions) {
-//            if (ActivityCompat.checkSelfPermission(
-//                    this,
-//                    permission
-//                ) != PackageManager.PERMISSION_GRANTED
-//            ) {
-//                hasPermission = false
-//            }
-//        }
-//        return hasPermission
-//    }
+    }
+    private fun requestPermission() {
+        ActivityCompat.requestPermissions(
+            this@DashboardActivity,
+            permissions, 1234
+        )
+    }
+    private fun hasPermission(): Boolean {
+        var hasPermission = true
+        for (permission in permissions) {
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    permission
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                hasPermission = false
+            }
+        }
+        return hasPermission
+    }
     
 }
