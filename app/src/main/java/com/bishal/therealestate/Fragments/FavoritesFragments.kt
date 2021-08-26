@@ -32,20 +32,20 @@ private lateinit var rvFav : RecyclerView
 
         return view
     }
-    private fun loadFavAdapter() {
-        CoroutineScope(Dispatchers.IO).launch {
-//            try {
-                val productRepository= ArtistRepository()
-                val response = productRepository.getAllArtist()
-                if (response.success == true) {
-                    // Put all the student details in lstStudents
-                    val listUsers: Array<Estate>? = response.data
-                    Log.d("response",response.toString());
-                    withContext(Dispatchers.Main) {
-                        val adapter= FavoritesAdapters( requireContext(),listUsers!!)
-                        rvFav.layoutManager= LinearLayoutManager(context)
-                        rvFav.adapter=adapter
-                    }
+//    private fun loadFavAdapter() {
+//        CoroutineScope(Dispatchers.IO).launch {
+////            try {
+//                val productRepository= ArtistRepository()
+//                val response = productRepository.getAllArtist()
+//                if (response.success == true) {
+//                    // Put all the student details in lstStudents
+//                    val listUsers: Array<Estate>? = response.data
+//                    Log.d("response",response.toString());
+//                    withContext(Dispatchers.Main) {
+//                        val adapter= FavoritesAdapters( requireContext(),listUsers!!)
+//                        rvFav.layoutManager= LinearLayoutManager(context)
+//                        rvFav.adapter=adapter
+//                    }
                 }
 //            } catch (ex: Exception) {
 //                withContext(Dispatchers.Main) {

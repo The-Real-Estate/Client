@@ -54,20 +54,20 @@ class HireArtist : AppCompatActivity() {
 //
 //    }
 
-    private fun showHighPriorityNotification() {
-        val notificationManager= NotificationManagerCompat.from(this)
-
-        val notificationChannels= Notification(this)
-        notificationChannels.createNotificationChannels()
-
-        val notification = NotificationCompat.Builder(this, notificationChannels.CHANNEL_1)
-            .setSmallIcon(R.drawable.ic_notifications_black_24dp)
-            .setContentTitle("Bishal Budha Wants To Offer Your Property")
-            .setContentText("Bishal Budha Wants To Offer Your Property")
-            .setColor(Color.BLUE)
-            .build()
-
-        notificationManager.notify(1,notification)
-
-    }
+//    private fun showHighPriorityNotification() {
+//        val notificationManager= NotificationManagerCompat.from(this)
+//
+//        val notificationChannels= Notification(this)
+//        notificationChannels.createNotificationChannels()
+//
+//        val notification = NotificationCompat.Builder(this, notificationChannels.CHANNEL_1)
+//            .setSmallIcon(R.drawable.ic_notifications_black_24dp)
+//            .setContentTitle("Bishal Budha Wants To Offer Your Property")
+//            .setContentText("Bishal Budha Wants To Offer Your Property")
+//            .setColor(Color.BLUE)
+//            .build()
+//
+//        notificationManager.notify(1,notification)
+//
+//    }
 }
