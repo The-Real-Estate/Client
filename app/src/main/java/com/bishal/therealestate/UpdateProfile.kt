@@ -24,13 +24,13 @@ class UpdateProfile : AppCompatActivity() {
         etPassword=findViewById(R.id.etPassword)
         btnUpdate=findViewById(R.id.btnUpdate)
 
-//        btnUpdate.setOnClickListener{
-//            startActivity(Intent(this@UpdateProfile,DashboardActivity::class.java))
-//            Toast.makeText(
-//                this@UpdateProfile,
-//                "User Updated Successfully !!",
-//                Toast.LENGTH_SHORT
-//            ).show()
-//        }
-//    }
+        btnUpdate.setOnClickListener{
+            startActivity(Intent(this@UpdateProfile,DashboardActivity::class.java))
+            Toast.makeText(
+                this@UpdateProfile,
+                "User Updated Successfully !!",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
 }
