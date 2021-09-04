@@ -112,16 +112,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
 
-//            } catch (ex: Exception) {
-//                withContext(Dispatchers.Main) {
-//                    Toast.makeText(
-//                        this@LoginActivity,
-//                        ex.toString(),
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//
-//                }
-//            }
+
         }
     }
 
